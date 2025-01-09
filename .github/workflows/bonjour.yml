@@ -33,7 +33,7 @@ jobs:
 
       - name: Build and push if Unstable
         uses: docker/build-push-action@v6
-        if: contains('refs/heads/main', github.ref)
+        if: contains('refs/heads/main', github.ref) 
         with:
           push: true
           context: "./"
