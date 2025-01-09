@@ -2,10 +2,7 @@ name: Bonjour
 on:
   push:
     branches:
-      - main
- 
-
-      
+      - main      
 jobs:
   dire_bonjour:
     runs-on: ubuntu-22.04
