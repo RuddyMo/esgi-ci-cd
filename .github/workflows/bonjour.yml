@@ -30,5 +30,6 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           push: true
+          
           context: "./"
           tags: ruddymo/sayhello:${{ github.ref_name }}
