@@ -30,3 +30,11 @@ jobs:
           push: true
           context: "./"
           tags: ruddymo/sayhello:${{ github.ref_name }}
+
+      - name: Build and push if Unstable
+        uses: docker/build-push-action@v6
+        if: contains('refs/heads/main', github.ref)
+        with:
+          push: true
+          context: "./"
+          tags: ruddymo/sayhello:unstable
